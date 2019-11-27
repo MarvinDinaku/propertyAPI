@@ -1,0 +1,16 @@
+<?php
+
+use Illuminate\Database\Seeder;
+use App\Property;
+class PropertyTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        factory(Property::class, 50)->create();
+    }
+}
